@@ -5,7 +5,7 @@ This repository contains software packages and tools for multi-armed bandits and
 [**Bernoulli Bandit Simulator**](bbsim):
 Multi-threaded simulator for running Bernoulli bandit experiments. Accessible via Python API.
 
-[**Optmal Policy for Bernoulli Bandits**](OptPol):
+[**Optmal Policy for Bernoulli Bandits**](optPol):
 Multi-threaded optimal policy computation. Indexing provided. Accessible via Python API.
 
 [**Whittle Index**](whittle):
