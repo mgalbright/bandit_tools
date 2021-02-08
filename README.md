@@ -1,6 +1,9 @@
 # **Bandit Tools**
 This repository contains software packages and tools for multi-armed bandits and algorithms.
 
+## **Papers**
+Papers related to these tools can be found [here](https://github.com/sebastianpilarski/Bernoulli_bandits).
+
 ## **Tools**
 [**Bernoulli Bandit Simulator**](bbsim):
 Multi-threaded simulator for running Bernoulli bandit experiments. Accessible via Python API.
@@ -15,4 +18,4 @@ Provides pre-computed Whittle Index table up to time horizon 300. Indices access
 Python implementation of UCBT_ob_0.73_0.19 algorithm. 
 
 ## **Requirements**
-Currently, Python APIs require Boost.Python (libboost_python).
+Currently, Python APIs require Boost.Python (libboost_python) and Linux (x86-64 CPU architecture).
