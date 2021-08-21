@@ -27,18 +27,22 @@ import bbsim
 # Available Players
 #   PlayerOpt 
 #   PlayerWi
+#   PlayerWiPARDI
 #   PlayerGi
 #   PlayerEps
 #   PlayerUcb1
 #   PlayerUcbT
+#   PlayerUcbTPARDI
 #   PlayerUcbT_0.73_0.19 
 #   PlayerUcbT_ob
 #   PlayerUcbT_ob_0.73_0.19
 #   PlayerTS
+#   PlayerTSPARDI
 #   PlayerPoker
 
 Player      = "PlayerOpt" 
 NArms       = "2"
+Delay       = '5'
 PriorAlf    = "1"
 PriorBet    = "1"
 TimeHorizon = "10"
@@ -51,7 +55,7 @@ GiDiscount  = "0.9" # For GI or ignored
 ProbArm1    = "0.3" # Fixed arm 1 probability or ignored
 ProbArm2    = "0.5" # Fixed arm 2 probability or ignored
 
-# bbsim.run(Player, NArms, PriorAlf, PriorBet, Epsilon, GiDiscount, TimeHorizon, NRuns, NThrds)
+bbsim.run(Player, NArms, PriorAlf, PriorBet, Epsilon, GiDiscount, TimeHorizon, NRuns, NThrds, Delay)
 
 # Runs 2-arms with fixed probabilities - NOTE: No _ob player is supported and Opt algorithm defaults to Beta(1,1) priors
-bbsim.run_fixed_2arm(Player, PriorAlf, PriorBet, Epsilon, GiDiscount, TimeHorizon, NRuns, NThrds, ProbArm1, ProbArm2)
+# bbsim.run_fixed_2arm(Player, PriorAlf, PriorBet, Epsilon, GiDiscount, TimeHorizon, NRuns, NThrds, ProbArm1, ProbArm2, Delay)
