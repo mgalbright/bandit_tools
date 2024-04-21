@@ -5,6 +5,7 @@
 #Run the image with
 #  docker run -it opt_mab
 #Then test it with
+#  cd /app/optPol
 #  python3 OptPol.py
 
 FROM ubuntu:20.04
